@@ -1313,7 +1313,7 @@ namespace Gloebit.GloebitMoneyModule
             }
             catch (Exception e)
             {
-                m_log.ErrorFormat("[GLOEBITMONEYMODULE] Encountered issues with database connection, disabling\n{0}", e.Message);
+                m_log.ErrorFormat("[GLOEBITMONEYMODULE] Encountered issues with database connection, disabling\n{0}", e.ToString());
                 return false;
             }
         }
